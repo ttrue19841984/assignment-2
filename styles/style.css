@@ -1,7 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
-*{
-    margin:0;
-    padding:0;
-    
+/* common shard styles start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
 }
+/* common shard styles end */
+
+/* nav related styles start */
+nav {
+  max-width: 72rem;
+  margin: 1.6rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+.logo .logo-img {
+  width: 3.75rem;
+  height: 1.75rem;
+}
+.logo .logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0223;
+}
+.logo .primary-color {
+  /* background-image: linear-gradient(360deg, #FF42A5, #FF42A5);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text; */
+  color: #ff42a5;
+}
+nav .menus {
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+nav ul li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+ul .sub-menu {
+  display: flex;
+  gap: 1rem;
+  background-color: rgba(11, 2, 35, 0.1);
+  padding: 0.9rem 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+}
+.sub-menu li a i{
+    font-size:1.5rem;
+}
+.sub-menu .icon-color {
+  color: red;
+}
+
+/* nav related styles end */
