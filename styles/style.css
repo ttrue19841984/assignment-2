@@ -52,16 +52,16 @@ nav .logo {
   gap: 0.9rem;
   align-items: center;
 }
-.logo .logo-img {
+.logo-img {
   width: 3.75rem;
   height: 1.75rem;
 }
-.logo .logo-text {
+.logo-text {
   font-size: 2rem;
   font-weight: 700;
   color: #0b0223;
 }
-.logo .primary-color {
+.primary-color {
   /* background-image: linear-gradient(360deg, #FF42A5, #FF42A5);
     -webkit-text-fill-color:transparent;
     -webkit-background-clip: text; */
@@ -179,86 +179,138 @@ ul .sub-menu {
 }
 /* online games section related styles end */
 /* play instantly section related styles start */
-.about-container{
-  max-width:75%;
-  margin:0 auto 3rem;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.about-container {
+  max-width: 75%;
+  margin: 0 auto 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about-info{
-  width:50%;
-  text-align:right;
-  margin-right:13rem;
+.about-info {
+  width: 50%;
+  text-align: right;
+  margin-right: 13rem;
 }
-.about-images{
-  width:50%;
-  position:relative;
+.about-images {
+  width: 50%;
+  position: relative;
 }
-.about-img1{
-  width:100%;;
+.about-img1 {
+  width: 100%;
 }
-.about-img2{
-  width:50%;
-  position:absolute;;
-  top:14.5rem;
-  left:-5rem;
+.about-img2 {
+  width: 50%;
+  position: absolute;
+  top: 14.5rem;
+  left: -5rem;
 }
 /* play instantly section related styles end */
 /* game items section related styles start */
-.game-items-container{
+.game-items-container {
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-  max-width:80%;
-  margin:0 auto;
-  padding:5.5rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 5.5rem;
 }
-.game-items1{
-  display:grid;
+.game-items1 {
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap:0.5rem;
-  margin-bottom:1.2rem;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
 }
-.game-items2{
-  width:90%;
-  margin:0 auto;
-  display:grid;
+.game-items2 {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap:0.5rem;
+  gap: 0.5rem;
 }
-.game-item{
-  display:flex;
-  gap:0.7rem;
-  justify-content:center;
-  align-items:center;
-  background-color:#FFF;
+.game-item {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 }
-.game-item:hover{
-  border:1px solid #ff42a5;
-  border-radius:3rem;
-  transition:1s;
+.game-item:hover {
+  border: 1px solid #ff42a5;
+  border-radius: 3rem;
+  transition: 1s;
   cursor: pointer;
 }
-.game-img{
-  width:20%;
+.game-img {
+  width: 20%;
 }
-.game-item-descreption{
-  color:#0B0223;
-  font-weight:600;
+.game-item-descreption {
+  color: #0b0223;
+  font-weight: 600;
 }
-.game-item-descreption:hover{
-  color:#ff42a5;
-  font-weight:600;
+.game-item-descreption:hover {
+  color: #ff42a5;
+  font-weight: 600;
 }
 /* game items section related styles end */
-
+/* footer section related styles start */
+.footer-container {
+  border: 3px solid pink;
+  background-color: #0b0223;
+  text-align: center;
+  padding: 5.5rem 0;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}
+.footer-logo-text {
+  color: #ffffff;
+}
+.footer-content {
+  max-width: 50%;
+  margin: 2.9rem auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer-content h5 {
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.social-area {
+  width: 20%;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+}
+.fa-brands {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 0 0.7rem;
+}
+.footer-text {
+  width: 45%;
+  margin: 0 auto 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-description {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* footer section related styles end */
 
 /* mobile devices responsive styles start*/
 @media screen and (max-width: 576px) {
   /* navbar responsive styles here */
   nav,
   nav ul,
-  .about-container
-   {
+  .about-container {
     flex-direction: column;
   }
   nav {
@@ -286,28 +338,37 @@ ul .sub-menu {
   }
   /* online games section responsive styles here */
   .online-games-cards {
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
   /* play instantly section responsive styles here */
-  .about-info{
-    width:100%;
-    margin-right:0;
+  .about-info {
+    width: 100%;
+    margin-right: 0;
   }
-  .about-images{
-    width:100%;
-    margin-top:1rem;
+  .about-images {
+    width: 100%;
+    margin-top: 1rem;
   }
   /* game items section related responsive styles here */
-  .game-items-container{
-    width:100%;
+  .game-items-container {
+    width: 100%;
   }
-  .game-items1{
+  .game-items1 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .game-items2{
+  .game-items2 {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  /* footer section related responsive styles here */
+  .footer-content,
+  .social-area {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-text {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* mobile devices responsive styles end*/
 
@@ -325,6 +386,26 @@ ul .sub-menu {
   }
   ul .sub-menu {
     margin-top: 2rem;
+  }
+  /* game items section related responsive styles here */
+  .game-items-container {
+    width: 100%;
+  }
+  .game-items1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .game-items2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* footer section related responsive styles here */
+  .footer-content,
+  .social-area {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-text {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* teblat devices responsive styles end */
