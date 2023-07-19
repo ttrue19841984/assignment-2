@@ -410,6 +410,7 @@ ul .sub-menu {
     width: 100%;
   }
   .game-items1 {
+    margin:0;
     grid-template-columns: repeat(3, 1fr);
   }
   .game-items2 {
@@ -419,10 +420,12 @@ ul .sub-menu {
   .footer-content,
   .social-area {
     max-width: 100%;
+    margin:0;
     grid-template-columns: repeat(3, 1fr);
   }
   .footer-text {
     width: 100%;
+    margin:0;
     grid-template-columns: repeat(2, 1fr);
   }
 }
