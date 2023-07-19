@@ -8,6 +8,15 @@
   list-style-type: none;
   text-decoration: none;
 }
+.btn-primary{
+  background-color:#ff42a5;
+  color:#FFF;
+  border:none;
+  padding:.8rem 1.7rem;
+  border-radius:3rem;
+  font-size:1rem;
+  text-transform:uppercase;
+}
 /* common shard styles end */
 
 /* nav related styles start */
@@ -69,9 +78,69 @@ ul .sub-menu {
 /* nav related styles end */
 
   /* banner related styles start */
-  .banner-container{
+  #banner-container{
+    display:flex;
     
   }
+  .banner-container{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:10rem;
+    background-image:url("../images/group1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    object-fit:cover;
+  }
+  .banner-container .banner-text{
+    font-size:2.2rem;
+    color:#0B0223;
+    font-weight:600;
+    text-transform:uppercase;
+  }
+  .banner-container .banner-title{
+    font-size:4.25rem;
+    font-weight:800;
+    text-transform:uppercase;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    -webkit-background-clip: text;
+  }
+ 
+
+  .banner-description{
+    display:flex;
+    gap:0.5rem;
+    margin:0.5rem 0;
+  }
+  .banner-description-icon{
+    color:#F948B2;
+  }
+  .banner-description-text{
+    font-size:1rem;
+    color:#534C64;
+    font-weight:500;
+  }
+  .buttons{
+    display:flex;
+    gap:1rem;
+    padding-top:1.3rem  ;
+  }
+  .btn{
+    background-color:#4EC5F7;
+  }
+  .banner-image-container{
+    width:50%;
+    padding:3rem;
+  }
+  .banner-image-container .banner-img{
+    width:80%;
+    height:100%;
+  }
+
   /* banner related styles end */
 
 /* mobile devices media query start*/
@@ -89,6 +158,20 @@ ul .sub-menu {
   }
   ul .sub-menu{
     margin-top:2rem;
+  }
+  /* banner media quiry here */
+  #banner-container{
+    flex-direction:column-reverse;
+  }
+  .banner-container{
+    width:100%;
+    padding-left:0;
+  }
+  .banner-image-container{
+    width:100%;
+  }
+  .banner-image-container .banner-img{
+    width:80%;
   }
 }
 /* mobile devices media query end*/
