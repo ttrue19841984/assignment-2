@@ -183,13 +183,13 @@ ul .sub-menu {
   max-width:75%;
   margin:0 auto;
   display:flex;
+  justify-content:center;
   align-items:center;
 }
 .about-info{
   width:50%;
   text-align:right;
   margin-right:13rem;
-
 }
 .about-images{
   width:50%;
@@ -208,11 +208,13 @@ ul .sub-menu {
 /* play instantly section related styles end */
 
 
-/* mobile devices media query start*/
+/* mobile devices responsive styles start*/
 @media screen and (max-width: 576px) {
-  /* navbar media quary here */
+  /* navbar responsive styles here */
   nav,
-  nav ul {
+  nav ul,
+  .about-container
+   {
     flex-direction: column;
   }
   nav {
@@ -224,7 +226,7 @@ ul .sub-menu {
   ul .sub-menu {
     margin-top: 2rem;
   }
-  /* banner section media quiry here */
+  /* banner section responsive styles here */
   #banner-container {
     flex-direction: column-reverse;
   }
@@ -238,14 +240,23 @@ ul .sub-menu {
   .banner-image-container .banner-img {
     width: 80%;
   }
-  /* online games section media query here */
+  /* online games section responsive styles here */
   .online-games-cards {
     grid-template-columns:1fr;
   }
+  /* play instantly section responsive styles here */
+  .about-info{
+    width:100%;
+    margin-right:0;
+  }
+  .about-images{
+    width:100%;
+    margin-top:1rem;
+  }
 }
-/* mobile devices media query end*/
+/* mobile devices responsive styles end*/
 
-/* teblat devices media query start */
+/* teblat devices responsive styles start */
 @media screen and (min-width: 576px) and (max-width: 920px) {
   nav,
   nav ul {
@@ -261,4 +272,4 @@ ul .sub-menu {
     margin-top: 2rem;
   }
 }
-/* teblat devices media query end */
+/* teblat devices responsive styles end */
