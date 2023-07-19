@@ -181,7 +181,7 @@ ul .sub-menu {
 /* play instantly section related styles start */
 .about-container{
   max-width:75%;
-  margin:0 auto;
+  margin:0 auto 3rem;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -204,8 +204,50 @@ ul .sub-menu {
   top:14.5rem;
   left:-5rem;
 }
-
 /* play instantly section related styles end */
+/* game items section relative styles start */
+.game-items-container{
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  padding:5.5rem;
+}
+.game-items1{
+  max-width:85%;
+  margin:0 auto;
+  display:flex;
+  gap:1rem;
+  margin-bottom:1.2rem;
+}
+.game-items2{
+  max-width:80%;
+  margin:0 auto;
+  display:flex;
+  gap:1rem;
+}
+.game-item{
+  display:flex;
+  gap:0.7rem;
+  justify-content:center;
+  align-items:center;
+  background-color:#FFF;
+}
+.game-item:hover{
+  border:1px solid #ff42a5;
+  border-radius:3rem;
+  transition:1s;
+  cursor: pointer;
+}
+.game-img{
+  width:20%;
+}
+.game-item-descreption{
+  color:#0B0223;
+  font-weight:600;
+}
+.game-item-descreption:hover{
+  color:#ff42a5;
+  font-weight:600;
+}
+/* game items section relative styles end */
 
 
 /* mobile devices responsive styles start*/
