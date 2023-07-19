@@ -12,7 +12,7 @@
 
 /* nav related styles start */
 nav {
-  max-width: 72rem;
+  max-width: 60%;
   margin: 1.6rem auto;
   display: flex;
   justify-content: space-between;
@@ -67,3 +67,48 @@ ul .sub-menu {
 }
 
 /* nav related styles end */
+
+  /* banner related styles start */
+  .banner-container{
+    
+  }
+  /* banner related styles end */
+
+/* mobile devices media query start*/
+@media screen and (max-width:576px){
+  nav,
+  nav ul
+  {
+    flex-direction:column;
+  }
+  nav{
+    max-width:50%;
+  }
+  nav .logo{
+    margin-bottom:2rem;
+  }
+  ul .sub-menu{
+    margin-top:2rem;
+  }
+}
+/* mobile devices media query end*/
+
+
+/* teblat devices media query start */
+@media screen and (min-width:576px) and (max-width:920px){
+  nav,
+  nav ul
+  {
+    flex-direction:column;
+  }
+  nav{
+    max-width:30%;
+  }
+  nav .logo{
+    margin-bottom:2rem;
+  }
+  ul .sub-menu{
+    margin-top:2rem;
+  }
+}
+/* teblat devices media query end */
